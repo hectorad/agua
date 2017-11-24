@@ -1,32 +1,25 @@
 ﻿using System;
-
-namespace agua
+namespace botellas
 {
-    class Program
+    class program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            
+            Console.WriteLine("cuanto tardas en bañarte");
+            var tiempo = System.Console.ReadLine();
+            int inttiempo = int.Parse(tiempo);
+            var botellas = inttiempo * 12;
+            Console.WriteLine("Cuando cumples años?    Ejemplo:12/04/2017"); 
+            var dias = System.Console.ReadLine(); 
+            int diasint = int.Parse(dias);
+            var botellasb = botellas *  diasint;
+            Console.WriteLine($"tu gastas alrededor de {botellas} botellas de agua cuando te bañas");
+            DateTime thisDays = DateTime.Today;
+            var time = thisDays;
+            Console.WriteLine($"asta tu cumpleaños gastaras {botellasb} botellas de agua al bañarte");
 
-        }
-
-
-
-        ///<summary>
-        ///Calcula el número de botella dependiendo de los minutos 
-        ///cada minuto equivale a 12 botellas
-        ///</summary>
-        static int calcularBotella(int minutos)
-        {
-            return 0;
-        }
-
-        ///<summary>
-        ///Calcula el número de días restantes hasta la fecha dada
-        ///</summary>
-        static int calcularDiasRestantes(DateTime fechaCumple)
-        {
-            return 0;
         }
     }
 }
